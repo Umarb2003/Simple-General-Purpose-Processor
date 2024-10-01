@@ -1,0 +1,20 @@
+LIBRARY ieee;
+USe ieee.std_logic_1164.all;
+
+ENTITY decode IS
+	port( w : in std_logic_vector(3 downto 0);
+			En: in std_logic;
+			y : out std_logic_vector(0 to 15));
+end decode;
+
+architecture Behavior of decode is 
+	signal Enw : std_logic_vector(4 downto 0);
+begin
+	Enw <= En & w;
+	with Enw select
+		y <= 	"1000" when "100",
+				"0100" when "101",
+				"0010" when "110",
+				"0001" when "111",
+				"0000" when OTHERS;
+end Behavior;
