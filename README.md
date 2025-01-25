@@ -7,3 +7,8 @@ The project code was uploaded on the FPGA board and displayed the desired output
 
 
 Please refer to the attached [PDF] report file for more information on the project.
+
+The link to the pdf report file has been provided below for easy access.
+
+link:
+https://github.com/Umarb2003/Simple-General-Purpose-Processor/blob/main/Umar_Babar_COE328_LAB%206_Simple%20general%20purpose%20processor.pdf
